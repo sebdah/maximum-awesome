@@ -2,6 +2,7 @@
 set nocompatible
 
 " configure Vundle
+filetype on " without this vim emits a zero exit status, later, because of :ft off
 filetype off
 filetype plugin indent on
 set rtp+=~/.vim/bundle/vundle/
@@ -54,12 +55,12 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 map <leader>l :Align
-nmap <leader>a :Ack
+nmap <leader>a :Ack "Adding comment to save the whitespace
 nmap <leader>b :CtrlPBuffer<CR>
 nmap <leader>d :NERDTreeToggle<CR>
 nmap <leader>f :NERDTreeFind<CR>
 nmap <leader>t :CtrlP<CR>
-nmap <leader>T :CtrlPClearCache<CR>:CtrlP<CR><CR>
+nmap <leader>T :CtrlPClearCache<CR>:CtrlP<CR>
 nmap <leader>] :TagbarToggle<CR>
 nmap <leader><space> :call whitespace#strip_trailing()<CR>
 nmap <leader>g :GitGutterToggle<CR>
