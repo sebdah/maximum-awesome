@@ -106,6 +106,11 @@ else
   let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 endif
 
+" Configuration for Vim Powerline
+let g:Powerline_symbols = 'fancy'
+set laststatus=2
+set encoding=utf-8
+
 " Go crazy!
 if filereadable(expand("~/.vimrc.local"))
   " In your .vimrc.local, you might like:
